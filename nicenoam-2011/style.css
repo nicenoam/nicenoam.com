@@ -1,0 +1,39 @@
+/*
+Theme Name:     Nicenoam Child
+Description:    Child theme for the Twenty Eleven theme for nicenoam.com
+Author:         Noam Reuveni
+Author URI:     http://nicenoam.com
+Template:       twentyeleven
+Version:        3
+*/
+
+@import url("../twentyeleven/style.css");
+
+/* Style/overide site title */
+#site-title a {
+	color: #fff!important;
+}
+#site-title a {
+	position:relative;
+	text-shadow:#adadad -1px -2px 0;
+	background: url('images/leaderboard_ico_sprite.png') no-repeat scroll left 0 transparent; 
+	padding-left:116px
+}
+
+#site-title a:hover {
+	background-position: left -124;
+	color: #FF8000 !important;
+}
+
+/* Override link color */
+#site-title a:focus,
+#site-title a:active {
+    color: #FF8000 !important;
+}
+
+@media (max-width: 650px) {
+	/* @media (max-width: 650px) Reduce font-sizes for better readability on smaller devices */
+	#site-title a {
+	background: url('images/leaderboard_sml_ico_sprite.png') no-repeat scroll left 0 transparent; 
+	padding-left:80px
+}
